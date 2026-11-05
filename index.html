@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBite | Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#">🍃 QuickBite</a>
+
+    <nav>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#how">How it works</a>
+    </nav>
+
+    <button id="cart-toggle">
+      Cart <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">GOOD FOOD, GOOD MOOD</p>
+
+        <h1>
+          Your favourite food,<br>
+          <span>delivered fast.</span>
+        </h1>
+
+        <p>Discover tasty meals from restaurants around you.</p>
+
+        <a class="primary" href="#restaurants">
+          Explore food
+        </a>
+      </div>
+
+      <!-- REALISTIC FOOD IMAGE -->
+      <div class="hero-art">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1000&auto=format&fit=crop"
+          alt="Delicious freshly prepared food"
+        >
+        <b>Fresh • Fast • Delicious</b>
+      </div>
+    </section>
+
+    <section class="section" id="restaurants">
+
+      <div class="heading">
+        <div>
+          <p class="eyebrow">WHAT ARE YOU CRAVING?</p>
+          <h2>Popular food items</h2>
+        </div>
+
+        <input id="search" type="text" placeholder="Search food...">
+      </div>
+
+      <div id="filters" class="filters">
+        <button class="filter active" data-category="All">All</button>
+        <button class="filter" data-category="Biryani">Biryani</button>
+        <button class="filter" data-category="Pizza">Pizza</button>
+        <button class="filter" data-category="Burgers">Burgers</button>
+        <button class="filter" data-category="Dosa">Dosa</button>
+        <button class="filter" data-category="South Indian">South Indian</button>
+        <button class="filter" data-category="Rice">Rice</button>
+        <button class="filter" data-category="Noodles">Noodles</button>
+        <button class="filter" data-category="Desserts">Desserts</button>
+      </div>
+
+      <div id="food-grid" class="food-grid"></div>
+
+    </section>
+
+    <section class="how section" id="how">
+
+      <p class="eyebrow">SIMPLE AND EASY</p>
+      <h2>Order in 3 easy steps</h2>
+
+      <div class="steps">
+
+        <article>
+          <b>01</b>
+          <h3>Choose your food</h3>
+          <p>Explore dishes and pick what you love.</p>
+        </article>
+
+        <article>
+          <b>02</b>
+          <h3>Add to cart</h3>
+          <p>Review your items and check the total.</p>
+        </article>
+
+        <article>
+          <b>03</b>
+          <h3>Enjoy your meal</h3>
+          <p>Place a demo order and enjoy!</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>QuickBite</strong>
+    <span>Student project demo • No real payments</span>
+  </footer>
+
+  <div id="backdrop" class="backdrop"></div>
+
+  <aside id="cart-panel" class="cart-panel">
+
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button id="cart-close">✕</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-bottom">
+
+      <div class="total">
+        <span>Total</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+
+      <button id="checkout" class="primary full">
+        Place demo order
+      </button>
+
+      <small>Demo only — no payment will be taken.</small>
+
+    </div>
+
+  </aside>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
